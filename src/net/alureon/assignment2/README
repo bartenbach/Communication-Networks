@@ -1,0 +1,11 @@
+Joke file format v0.1
+
+Jokes are specified in the format: clue:punchline
+    Where ':' is the delimiter between clue and punchline.
+
+Jokes are separated by newlines.
+
+Example file:
+
+boo:You don't have to cry about it!
+atch:Bless you!
