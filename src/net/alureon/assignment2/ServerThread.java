@@ -1,10 +1,12 @@
-package net.alureon;
+package net.alureon.assignment2;
+
+import net.alureon.Joke;
+import net.alureon.KnockKnockProtocol;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.List;
 

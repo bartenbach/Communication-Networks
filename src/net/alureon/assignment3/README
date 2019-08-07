@@ -1,0 +1,29 @@
+Server can be started like so:
+% java net.alureon.assignment3.Main 4443
+
+Clients can join the server with the following:
+% java net.alureon.assignment3.MultiUserChatClient localhost 4443 arcsin
+% java net.alureon.assignment3.MultiUserChatClient localhost 4443 rabbitear
+% java net.alureon.assignment3.MultiUserChatClient localhost 4443 noob
+
+Once connected, messages should print that the client has joined the server.
+
+From there, chat can proceed as normal.  All messages are  broadcast to other users
+
+Private Messaging:
+To private message a user, simply prefix the message with @ and their username.  @arcsin hello
+When receiving a private message, the message will show in brackets: [arcsin] hello
+This indicates the user sent you a private message
+
+Changing your nickname:
+/nick {newnickname}
+Note: all connected clients will be notified that you have changed your nickname.
+
+Listing connected users:
+/list
+
+Disconnecting from the server:
+/quit
+
+Getting help:
+/help

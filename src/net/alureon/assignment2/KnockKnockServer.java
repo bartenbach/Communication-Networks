@@ -1,4 +1,4 @@
-package net.alureon;
+package net.alureon.assignment2;
 
 /*
  * Copyright (c) 1995, 2014, Oracle and/or its affiliates. All rights reserved.
@@ -31,6 +31,8 @@ package net.alureon;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+import net.alureon.assignment2.ServerThread;
+
 import java.net.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -39,7 +41,7 @@ import java.util.Scanner;
 
 public class KnockKnockServer {
 
-    private static final List<Joke> jokeList = new ArrayList<>();
+    private static final List<net.alureon.Joke> jokeList = new ArrayList<>();
 
     public static void main(String[] args)  {
 
@@ -84,7 +86,7 @@ public class KnockKnockServer {
                 }
                 String clue = splitJoke[0];
                 String punchline = splitJoke[1];
-                jokeList.add(new Joke(clue, punchline));
+                jokeList.add(new net.alureon.Joke(clue, punchline));
             }
         } catch (FileNotFoundException e) {
             System.out.println("Please specify a valid file.");
